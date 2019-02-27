@@ -5,7 +5,6 @@ import uuid
 import requests
 
 from gtagora.exception import AgoraException
-from gtagora.models.dataset import Dataset, DatasetType
 
 
 class Client:
@@ -94,10 +93,10 @@ class Client:
                     'flowTotalChunks': str(nof_chunks)}
                 response = self.post(url, files=files, data=form)
                 if response.status_code != 200:
-                    raise AgoraException(f"Failed to upload chunk {chunk} of file {cur_file}. Status code: {response.status_code}")
-        
-        return True
+                    raise AgoraException(
+                        f"Failed to upload chunk {chunk} of file {cur_file}. Status code: {response.status_code}")
 
+        return True
 
     def print_progress(self, curFile, nof_file, chunk, nof_chunks):
         length = 40
