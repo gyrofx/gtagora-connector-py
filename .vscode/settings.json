@@ -1,0 +1,14 @@
+{
+  "python.pythonPath": "env\\Scripts\\python.exe",
+  "python.linting.pylintEnabled": false,
+  "python.linting.pep8Enabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.unitTest.autoTestDiscoverOnSaveEnabled": false,
+  "python.unitTest.pyTestEnabled": true,
+  "python.unitTest.pyTestArgs": [
+    "tests"
+  ],
+  "python.unitTest.unittestEnabled": false,
+  "python.unitTest.nosetestsEnabled": false
+}

@@ -33,6 +33,7 @@ class TestPatient:
         connection = BasicConnection('http://localhost', 'test', 'test')
         http_client = FakeClient(connection)
         p = Patient(http_client)
+        assert p
 
     def test_get(self):
         connection = BasicConnection('http://localhost', 'test', 'test')
